@@ -1,0 +1,6 @@
++ Set proper github/<name>
+- Add .openshift folder and files.
+- Add automatic execution of sql scripts via Liquibase.
++ Create local MySQL database, tables and example records.
+- Using Class instrumentation System.getenv(""); can be intercepted and JDBC connection can be creation runtime.
+
