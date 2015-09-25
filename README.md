@@ -4,7 +4,7 @@ $ mysql -u root -p
 ```
 
 ```sql
-CREATE DATABASE IF NOT EXISTS userexample
+mysql> CREATE DATABASE IF NOT EXISTS userexample
  DEFAULT CHARACTER SET = utf8
 ;
 ```
@@ -14,7 +14,7 @@ CREATE DATABASE IF NOT EXISTS userexample
 $ mysql -u root -p
 ```
 ```sql
-GRANT ALL ON userexample.* TO 'userexample'@'localhost' IDENTIFIED BY 'userexample';
+mysql> GRANT ALL ON userexample.* TO 'userexample'@'localhost' IDENTIFIED BY 'userexample';
 ```
 
 
@@ -31,9 +31,11 @@ mysql> source src/main/sql/insert.mysql.sql
 
 
 ## Start Spring Boot application
+```shell
 $ mvn clean install spring-boot:run
-
+```
 
 ## Open Browser
+```browser
  - http://localhost:8080/login
-
+```
